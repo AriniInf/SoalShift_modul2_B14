@@ -49,11 +49,11 @@ dijalankan setiap 3 detik dengan syarat sesuai dengan diatas
 
 Pada soal ini kita aka menggunakan 3 exec. 
 Yang pertama digunakan untuk 
-###### unzip, 
+#### unzip 
 yang kedua untuk 
-###### touch, 
+###### touch
 dan yang terakhir digunakan untuk 
-###### ls. 
+#### ls
 - Pertama-tama kita membuat fork untuk unzip file campur2.zip terlebih dahulu. 
 - Kemudian membuat fork lagi untuk touch, yang digunakan untuk membuat file daftar.txt untuk meletakkan file berextensi .txt ke daftar.txt, digunakan file descriptor yang dibuat menggunakan command pipe. 
 - Kemudian digunakan exec untuk ls, namun sebelumnya file descriptor untuk read di close terlebih dahulu, dan menggunakan command (dup2) untuk membuat copy dari file descriptor. 
