@@ -42,4 +42,8 @@ dijalankan setiap 3 detik dengan syarat sesuai dengan diatas
 - Kemudian kita membuat struct tm bernama waktu bertipe data pointer. 
 - Waktu = localtime(&t) berfungsi untuk mengkonversi waktu di time_t biar bisa kepisah pisah hari, jam, bulan.
 - Selanjutnya buatlah array of character yaitu nama, Kemudian simpan hari, bulan, tahun, dan minggu didalam array of char tadi - - lalu di print nama nya dalam bentuk string. 
-
+- Buat variabel character yang saya berinama dir. Variabel dir ini untuk menyimpan dari yang nama agar tersimpan path dimana file baru itu di buat.
+- Buat folder bernama Hasil dengan chmod 777 biar bisa mengakses semua (read,write,execute).
+- Deklarasi variabel i bertipe data integer, untuk perulangan untuk membuat folder setiap 30 menit.
+- Dan di dalam folder tersebut buatlah file syslog dan file baru yang akan terbuat. Print file log#.log yang akan disimpan di ile baru kemudian buka file tersebut.
+- Untuk memindahkan seluruh file log#.log deklarasikan pindah dengan tipe data char. Yang terakhir cek isi file syslog yang sudah kita buat kemudian isinya di simpan di suatu variabel file_baru. Kemudian tutup semua file yang kita buat. Digunakan sleep(60) dalam satuan detik karena perintah soal adalah membuat file setiap menit
