@@ -55,7 +55,7 @@ int counter = 2,i;
 	file = fopen(nomor,"w");
 	fclose(file);
 	counter++;
-	sleep(10);
+	sleep(5);
 	}
   }
   exit(EXIT_SUCCESS);
