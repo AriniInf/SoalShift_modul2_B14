@@ -1,5 +1,14 @@
 # SoalShift_modul2_B14
 
+## Soal 1
+
+Untuk mengerjakan soal ini kita harus membuat program daemon. 
+- Lalu lakukan iterasi file dalam directory home/gipen/modul2/soal1 menggunakan fungsi readdir();. 
+- Informasi file yang terbaca akan disimpan dalam variabel struct dirent *file;. 
+- Langkah selanjutnya yaitu perika apakah file tersebut berextensi .png dengan cara meilhat apakah ada substring “.png” di akhir nama file tersebut. Jika file tersebut berextensi .png maka ambil nama file tersebut dan disimpan kedalam variabel filename. 
+- Kemudian tambahan string “_grey.png” diakhir filename. 
+- Langkah terakhir yaitu mengubah nama file sekaligus memindahkannya ke folder home/gipen/Modul2/gambar dengan menggunakan command rename “rename(lama, baru)”.
+
 ## Soal 2
 - Membubuat Struct Stat dengan variabel sb
 - Lalu masukkan lokasi direktori kedalam variabel dir yang bertipe array of char
@@ -35,6 +44,20 @@ jika sama makan file elen akan di hapus dengan bantuan chmod. chmod 0777 dengan 
 `sleep(3)`
 
 dijalankan setiap 3 detik dengan syarat sesuai dengan diatas
+
+## Soal 3
+
+Pada soal ini kita aka menggunakan 3 exec. 
+Yang pertama digunakan untuk 
+###### unzip, 
+yang kedua untuk 
+###### touch, 
+dan yang terakhir digunakan untuk 
+###### ls. 
+- Pertama-tama kita membuat fork untuk unzip file campur2.zip terlebih dahulu. 
+- Kemudian membuat fork lagi untuk touch, yang digunakan untuk membuat file daftar.txt untuk meletakkan file berextensi .txt ke daftar.txt, digunakan file descriptor yang dibuat menggunakan command pipe. 
+- Kemudian digunakan exec untuk ls, namun sebelumnya file descriptor untuk read di close terlebih dahulu, dan menggunakan command (dup2) untuk membuat copy dari file descriptor. 
+- Setelah itu buka file descriptor berindex 0 yang digunakan hanya untuk read saja, dan file daftar.txt untuk write daftar file yang memiliki extensi .txt ke daftar.txt. Untuk mecari file yang berextensi .txt menggunakan command strstr().
 
 ## Soal 5
 ### 5a
