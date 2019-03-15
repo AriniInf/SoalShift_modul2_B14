@@ -59,6 +59,10 @@ dan yang terakhir digunakan untuk
 - Kemudian digunakan exec untuk ls, namun sebelumnya file descriptor untuk read di close terlebih dahulu, dan menggunakan command (dup2) untuk membuat copy dari file descriptor. 
 - Setelah itu buka file descriptor berindex 0 yang digunakan hanya untuk read saja, dan file daftar.txt untuk write daftar file yang memiliki extensi .txt ke daftar.txt. Untuk mecari file yang berextensi .txt menggunakan command strstr().
 
+## Soal 4
+
+
+
 ## Soal 5
 ### 5a
 
