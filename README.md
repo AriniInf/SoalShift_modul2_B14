@@ -61,15 +61,10 @@ dan yang terakhir digunakan untuk
 
 ## Soal 4
 
-Variable “i” digunakan sebagai penomoran file makan_sehat#.txt.
-Membuat file dengan nama makan_sehat di dalam folder makanan.
-Strcat digunakan hanya untuk mempermudah penamaan file saja.
-Setiap file makan_sehat berhasil di write, “i” di increment.
-Membuat proses yang berjalan setiap 5 detik.
-Mengambil time dari program yang dijalankan lalu menyimpannya dalam variable timer.
-Stat digunakan untuk return informasi file, dan mengambil informasi berupa waktu akses dari file makan_enak.txt.
-Setelah didapatkan waktu saaat program dijalankan dan waktu terakhir file makan_enak.txt diakses, kemudian dicari selisih dari keduanya dengan menggunakan fungsi difftime.
-jika difftime <= 30, maka akan dijalankan dalam rentang waktu 0-30 detik setelah file makan_enak diakses, setelah itu dibuatlah file makan_sehat#.txt.
+- Pertama, kita mencari kapan waktu terakhir di akses dan waktu sekarang. jika waktu sekarang - 30 <waktu kapan terkahir diakses 
+- kita menlakukan perulangan dari 1 sampai ke counter(angka terakhir dr nama file yang terakhir dibuat ditambahkan 1) jika ada file yang terlewati misalnya 1, 2, 4, 5. maka program secara otomatis break dan membuat file makan_sehat3.txt. dan disimpan di dalam folder /home/gipen/Documents/makanan
+counter di increment setiap menutup file lalu dilakukan terus hingga tidak memenuhi syarat perulangan tersebut
+program dijalankan setiap 5 menit
 
 ## Soal 5
 ### 5a
