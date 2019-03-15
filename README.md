@@ -37,6 +37,7 @@ jika sama makan file elen akan di hapus dengan bantuan chmod. chmod 0777 dengan 
 dijalankan setiap 3 detik dengan syarat sesuai dengan diatas
 
 ## Soal 5
+### 5a
 
 - Deklarasikan variabel t dengan tipe data time_t, isi dari wvariabel t tesebut disimpan di variabel time. 
 - Kemudian kita membuat struct tm bernama waktu bertipe data pointer. 
@@ -47,3 +48,9 @@ dijalankan setiap 3 detik dengan syarat sesuai dengan diatas
 - Deklarasi variabel i bertipe data integer, untuk perulangan untuk membuat folder setiap 30 menit.
 - Dan di dalam folder tersebut buatlah file syslog dan file baru yang akan terbuat. Print file log#.log yang akan disimpan di ile baru kemudian buka file tersebut.
 - Untuk memindahkan seluruh file log#.log deklarasikan pindah dengan tipe data char. Yang terakhir cek isi file syslog yang sudah kita buat kemudian isinya di simpan di suatu variabel file_baru. Kemudian tutup semua file yang kita buat. Digunakan sleep(60) dalam satuan detik karena perintah soal adalah membuat file setiap menit
+
+### 5b
+
+FILE * command = popen("pidof soal5","r"); 
+
+berarti kita membuat file command yang perintahnya membuka pid dari soal5.
