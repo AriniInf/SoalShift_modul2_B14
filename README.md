@@ -303,6 +303,7 @@ void* menu2(void *arg)
     sleep(1);
     }
 }
+
 4. Fungsi Main
 
 ```c
